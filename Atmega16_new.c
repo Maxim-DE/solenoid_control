@@ -109,20 +109,7 @@ time=time+1;	//милисекунды
 time_led=time_led+1;
 
 
-//	switch(Led_test){
-//		case ON:{
-//			LED_GAP_ON;
-//			LED_SHORT_ON;
-//			Led_test=OFF;
-//			break;
-//		}
-//		case OFF:{
-//			LED_GAP_OFF;
-//			LED_SHORT_OFF;		
-//			Led_test=ON;
-//			break;
-//		}		
-//	}
+
 
 TCNT0=0x00;
 }
