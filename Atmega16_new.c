@@ -109,20 +109,20 @@ time=time+1;	//милисекунды
 time_led=time_led+1;
 
 
-//	switch(Led_test){
-//		case ON:{
-//			LED_GAP_ON;
-//			LED_SHORT_ON;
-//			Led_test=OFF;
-//			break;
-//		}
-//		case OFF:{
-//			LED_GAP_OFF;
-//			LED_SHORT_OFF;		
-//			Led_test=ON;
-//			break;
-//		}		
-//	}
+	switch(Led_test){
+		case ON:{
+			LED_GAP_ON;
+			LED_SHORT_ON;
+			Led_test=OFF;
+			break;
+		}
+		case OFF:{
+			LED_GAP_OFF;
+			LED_SHORT_OFF;		
+			Led_test=ON;
+			break;
+		}		
+	}
 
 TCNT0=0x00;
 }
@@ -150,9 +150,9 @@ ClearBit(PORT_LED_GAP,BIT_LED_GAP);
 
 //CHANEL_A_ON;
 //CHANEL_B_ON;
-
-После того как произошла нету сброса аварии т.е когда скрычиваем в ноль(по центр)
- надо сделать что бы светодиод сбрассывался
+//
+//После того как произошла нету сброса аварии т.е когда скрычиваем в ноль(по центр)
+// надо сделать что бы светодиод сбрассывался
 
 //поставить пределитель на 8 и инициализировать таймер на мили или 100 мили секунд 
 
@@ -184,10 +184,10 @@ CHANEL_B_OFF;
 time=0;
 #asm("sei")
 //-------мигание светодиодом------------
-while(time<1000){
-//while(1){
+//while(time<1000){
+while(1){
     //time_led=time_led+1;
-	blik_led_start();
+//	blik_led_start();
 //    LED_GAP_OFF;
 //    LED_SHORT_OFF;
 }
