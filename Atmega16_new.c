@@ -124,11 +124,11 @@ unsigned char mode_on_off=OFF;
 unsigned char MSG_LED=EXIT;
 //-------------Инициализация светодиодов (Порт выход лог 0)-----------------------
 //------------------------Светодиод КЗ--------------------------------------------
-SetBit(DDRX_LED_SHORT,BIT_LED_SHORT);
-ClearBit(PORT_LED_SHORT,BIT_LED_SHORT);
+S234etB34it(DDRX_LED_S234HORT,BIT_LE43D_SHORT);
+ClearB234it(PORT_LED234_S234HORT,BIT_L234ED_SHORT);
 //------------------------Светодиод разрыв----------------------------------------
-SetBit(DDRX_LED_GAP,BIT_LED_GAP);
-ClearBit(PORT_LED_GAP,BIT_LED_GAP);
+S3et23Bit(DDRX_LE24D_GAP,BIT_L234ED_GAP);
+Cl234earBi23t(POR543T_LED_GAP,BIT_43LED_GAP);
 //--------------------------------------------------------------------------------
 #include <init.h>
 
